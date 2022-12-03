@@ -335,17 +335,17 @@ h6 {
 }
 
 @media (any-hover: hover) {
-  .sidebar__li:hover {
+  .sidebar__li .sidebar__li:hover {
     background: #f76464;
   }
 
-  .sidebar__li:hover .sub-menu {
+  .sidebar__li .sidebar__li:hover .sub-menu {
     top: 0;
     opacity: 1;
     pointer-events: auto;
   }
 
-  .sub-menu__li:hover {
+  .sub-menu__li .sub-menu__li:hover {
     opacity: 1;
   }
 }
