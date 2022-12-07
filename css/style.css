@@ -228,8 +228,8 @@ h6 {
 }
 
 .sidebar.close .sub-menu__link_name {
-  display: block;
   font-size: 18px;
+  display: block;
 }
 
 .sidebar.close .sub-menu__li_name {
@@ -267,6 +267,10 @@ h6 {
   transition: all 0.4s ease;
 }
 
+.sidebar__li.showMenu .sub-menu {
+  display: block;
+}
+
 .sidebar__li:hover {
   background: #f76464;
 }
@@ -275,6 +279,13 @@ h6 {
   top: 0;
   opacity: 1;
   pointer-events: auto;
+}
+
+.sidebar__li:hover .sub-menu_blank {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .sidebar__li i {
@@ -324,6 +335,13 @@ h6 {
   padding: 6px 6px 14px 80px;
   margin-top: -10px;
   background: #f76464;
+  display: none;
+}
+
+.sub-menu_blank {
+  opacity: 1;
+  pointer-events: auto;
+  padding: 3px 20px 6px 16px;
 }
 
 .sub-menu__li {
@@ -346,4 +364,51 @@ h6 {
 
 .sub-menu__link_name {
   display: none;
+}
+
+.profile {
+  border: 2px solid blue;
+  position: fixed;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #f76464;
+  padding: 6px 0;
+}
+
+.profile__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile img {
+  height: 52px;
+  width: 52px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+  margin: 0px 14px 0px 12px;
+  background-color: #f76464;
+  padding: 10px;
+}
+
+.profile__job-name {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.profile__job {
+  font-size: 12px;
 }

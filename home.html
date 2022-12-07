@@ -6,16 +6,16 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221203163950">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221207220904">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css?_v=20221203163950' rel='stylesheet'>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css?_v=20221207220904' rel='stylesheet'>
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 	<div class="wrapper">
-		<nav class="sidebar close">
+		<nav class="sidebar">
 			<div class="sidebar__logo">
 				<picture><source srcset="img/logo2.webp" type="image/webp"><img src="img/logo2.jpg" alt="logo"></picture>
 				<span class="logo-name">03 ONLINE</span>
@@ -27,12 +27,27 @@
 						<i class='bx bxs-capsule'></i>
 						<span class="sidebar__link-text">Ліки</span>
 					</a>
+					<ul class="sidebar__sub-menu sub-menu sub-menu_blank">
+						<li class="sub-menu__li sub-menu__li_name">
+							<a href="#" class="sub-menu__link sub-menu__link_name">
+								Ліки
+							</a>
+						</li>
+					</ul>
 				</li>
 				<li class="sidebar__li">
 					<a href="" class="sidebar__link">
 						<i class='bx bxs-capsule'></i>
 						<span class="sidebar__link-text">Хвороби</span>
 					</a>
+					<ul class="sidebar__sub-menu sub-menu sub-menu_blank">
+						<li class="sub-menu__li sub-menu__li_name">
+							<a href="#" class="sub-menu__link sub-menu__link_name">
+								Хвороби
+							</a>
+						</li>
+					</ul>
+
 				</li>
 				<li class="sidebar__li">
 					<div class="sidebar__category">
@@ -40,7 +55,7 @@
 							<i class='bx bx-book-content'></i>
 							<span class="sidebar__link-text">Статті</span>
 						</a>
-						<i class='bx bxs-chevron-down'></i>
+						<i class='bx bxs-chevron-down arrow'></i>
 					</div>
 					<ul class="sidebar__sub-menu sub-menu">
 						<li class="sub-menu__li sub-menu__li_name">
@@ -82,7 +97,7 @@
 							<i class='bx bx-category'></i>
 							<span class="sidebar__link-text">Категорії</span>
 						</a>
-						<i class='bx bxs-chevron-down'></i>
+						<i class='bx bxs-chevron-down arrow'></i>
 					</div>
 					<ul class="sidebar__sub-menu sub-menu">
 						<li class="sub-menu__li sub-menu__li_name">
@@ -159,6 +174,31 @@
 					</ul>
 				</li>
 
+				<li class="sidebar__li">
+					<a href="" class="sidebar__link">
+						<i class='bx bx-pie-chart-alt-2'></i>
+						<span class="sidebar__link-text">Аналітика</span>
+					</a>
+					<ul class="sidebar__sub-menu sub-menu sub-menu_blank">
+						<li class="sub-menu__li sub-menu__li_name">
+							<a href="#" class="sub-menu__link sub-menu__link_name">
+								Аналітика
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="sidebar__li">
+					<div class="sidebar__profile profile">
+						<div class="profile__content">
+							<picture><source srcset="img/profile.webp" type="image/webp"><img src="img/profile.jpg" alt="profile"></picture>
+						</div>
+						<div class="profile__job-name">
+							<div class="profile__name">Stanislav Yudin</div>
+							<div class="profile__job">Front-End Developer</div>
+						</div>
+						<i class='bx bx-log-out'></i>
+					</div>
+				</li>
 			</ul>
 
 		</nav>
@@ -169,7 +209,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20221203163950"></script>
+	<script src="js/app.min.js?_v=20221207220904"></script>
 </body>
 
 </html>
