@@ -28,6 +28,11 @@
         console.log(arrowParent);
         arrowParent.classList.toggle("showMenu");
     }));
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarTog = document.querySelector(".toggle");
+    sidebarTog.addEventListener("click", (() => {
+        sidebar.classList.toggle("close");
+    }));
     window["FLS"] = true;
     isWebp();
 })();
