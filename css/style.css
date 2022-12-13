@@ -218,6 +218,7 @@ h6 {
 
 .sidebar i.toggle {
   position: absolute;
+  border: 1px solid #7c1b1b;
   top: 10%;
   right: -25px;
   -webkit-transform: translateX(-50%);
@@ -239,6 +240,7 @@ h6 {
   border-radius: 50%;
   font-size: 22px;
   cursor: pointer;
+  z-index: 100;
 }
 
 .sidebar.close {
@@ -249,6 +251,10 @@ h6 {
   -webkit-transform: translate(-50%) rotate(180deg);
       -ms-transform: translate(-50%) rotate(180deg);
           transform: translate(-50%) rotate(180deg);
+}
+
+.sidebar.close .sidebar__link-text {
+  opacity: 0;
 }
 
 .sidebar.close .logo-name {
@@ -284,6 +290,31 @@ h6 {
 
 .sidebar.close .sidebar__logo img {
   max-width: 70px;
+}
+
+.sidebar.close .profile {
+  width: 78px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.sidebar.close .profile__job-name {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar.close .profile__photo img {
+  padding: 0px;
+  margin: 0px 0px 0px 12px;
+}
+
+.sidebar.close .home-section {
+  position: relative;
+  left: 78px;
+  top: 0;
 }
 
 .sidebar__logo {
@@ -442,6 +473,7 @@ h6 {
 
 .profile {
   border: 1px solid #7c1b1b;
+  width: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -455,6 +487,9 @@ h6 {
   padding: 6px 0;
   gap: 5px;
   border-radius: 0px 6px 6px 0px;
+  -webkit-transition-delay: all 0.3s ease;
+       -o-transition-delay: all 0.3s ease;
+          transition-delay: all 0.3s ease;
 }
 
 .profile__photo {
@@ -481,8 +516,49 @@ h6 {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
+  -webkit-transition-delay: 0.3s;
+       -o-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 
 .profile__job {
   font-size: 12px;
+  -webkit-transition-delay: 0.3s;
+       -o-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.home-section {
+  position: relative;
+  left: 280px;
+  top: 0;
+  width: calc(100% - 280px);
+}
+
+.home-section__content {
+  border: 2px solid green;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.1875rem;
+}
+
+.menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.menu__list {
+  border: 2px solid blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.125rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
