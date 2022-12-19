@@ -316,16 +316,16 @@ h6 {
 
 .sidebar.close .profile {
   width: 78px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .sidebar.close .profile__job-name {
   opacity: 0;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
 }
 
 .sidebar.close .profile__photo img {
@@ -409,7 +409,12 @@ h6 {
 }
 
 .sidebar__li.showMenu .sub-menu {
+  position: relative;
   display: block;
+  z-index: 2;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .sidebar__li.showMenu i.arrow {
@@ -541,9 +546,12 @@ h6 {
   padding: 6px 0;
   gap: 5px;
   border-radius: 0px 6px 6px 0px;
-  -webkit-transition-delay: all 0.3s ease;
-       -o-transition-delay: all 0.3s ease;
-          transition-delay: all 0.3s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-transition-delay: background-color 0.4s ease;
+       -o-transition-delay: background-color 0.4s ease;
+          transition-delay: background-color 0.4s ease;
 }
 
 .profile__photo {
@@ -564,44 +572,40 @@ h6 {
   margin: 0px 14px 0px 12px;
   background-color: #f76464;
   padding: 10px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .profile__job-name {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
-  -webkit-transition-delay: 0.3s;
-       -o-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+  -webkit-transition-delay: 0.4s;
+       -o-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 
 .profile__job {
   font-size: 12px;
-  -webkit-transition-delay: 0.3s;
-       -o-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+  -webkit-transition-delay: 0.4s;
+       -o-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 
 .home-section {
-  position: relative;
+  position: fixed;
   left: 280px;
   top: 0;
   width: calc(100% - 280px);
   -webkit-transition: 0.5s ease;
   -o-transition: 0.5s ease;
   transition: 0.5s ease;
-}
-
-.home-section__content {
-  border: 2px solid blue;
-  height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 2.1875rem;
+  padding: 10px 15px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow-y: hidden;
+  border-radius: 0px 0px 6px 6px;
 }
 
 .home-section.close {
@@ -612,6 +616,21 @@ h6 {
   -o-transition: 0.5s ease;
   transition: 0.5s ease;
   width: calc(100% - 78px);
+}
+
+.home-section__content {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.1875rem;
+}
+
+.home-section__authorization i {
+  cursor: pointer;
 }
 
 .menu {
@@ -627,4 +646,48 @@ h6 {
   font-size: 1.125rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.menu__link:hover {
+  text-decoration: underline;
+}
+
+.authorization {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.authorization__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.authorization__icons i:first-child {
+  color: #7c1b1b;
+}
+
+.authorization__icons i:last-child {
+  color: blue;
+}
+
+.authorization__links {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.authorization__link:hover {
+  text-decoration: underline;
 }
