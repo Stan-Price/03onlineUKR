@@ -30,8 +30,10 @@
     }));
     let sidebar = document.querySelector(".sidebar");
     let sidebarTog = document.querySelector(".toggle");
+    let homeSection = document.querySelector(".home-section");
     sidebarTog.addEventListener("click", (() => {
         sidebar.classList.toggle("close");
+        homeSection.classList.toggle("close");
     }));
     window["FLS"] = true;
     isWebp();
